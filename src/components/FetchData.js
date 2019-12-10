@@ -15,6 +15,8 @@ class FetchData extends React.Component{
         this.getData();
     }
 
+    // http://127.0.0.1:8000/api/v1/flights
+
     getData() {
         fetch('https://backend-261116.appspot.com/plane/')
             .then(results => results.json())
